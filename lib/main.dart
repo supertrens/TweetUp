@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './pages/home/custom_appbar.dart';
-import './pages/home/body.dart';
+import './pages/tabscreen/tabs.dart';
+
 
 import './utils/constant.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: Constant.APP_NAME,
       theme: buildThemeData(),
-      home: MyHomePage(),
+      home: Scaffold(body: TabsScreen()),
     );
   }
 
@@ -28,30 +28,22 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontSize: 22),
             button: TextStyle(color: Colors.white),
+            body1: TextStyle(
+              color: Color.fromRGBO(20, 51, 51, 1),
+            ),
+            body2: TextStyle(
+              color: Color.fromRGBO(20, 51, 51, 1),
+            ),
           ),
       appBarTheme: AppBarTheme(
         textTheme: ThemeData.light().textTheme.copyWith(
-              title: TextStyle(
+              title: const TextStyle(
+                  color: Colors.white,
                   fontFamily: 'OpenSans',
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 36.0),
             ),
       ),
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: <Widget>[
-          CustomAppBar(),
-          HomePageBody(),
-        ],
-      ),
-    );
-  }
-}
-

@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:taibe/pages/home/section_devider.dart';
 
-import '../../data/seed_data.dart';
 import './hero.dart';
 import './new_user_card.dart';
 import './profile_card.dart';
+import '../../utils/section_devider.dart';
+import '../../data/seed_data.dart';
+import '../../providers/user.dart';
 
 class HomePageBody extends StatelessWidget {
-  static const users = DummyData.users;
+  static const List<User> users = DummyData.users;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Container(
       child: Column(
         children: <Widget>[
           ProfileCard(),
           HeroBanner(),
           SectionDivider("New Users"),
-          Expanded(
-            child: buildListView(),
-          ),
+          Expanded(child: buildListView()),
         ],
       ),
     );
@@ -26,10 +25,12 @@ class HomePageBody extends StatelessWidget {
 
   ListView buildListView() {
     return ListView.builder(
-              itemBuilder: (ctx, index) {
-                return NewUserCard(users[index]);
-              },
-              itemCount: users.length,
-              padding: EdgeInsets.symmetric(vertical: 16.0));
+      scrollDirection: Axis.vertical,
+      itemCount: users.length,
+      padding: const EdgeInsets.all(25),
+      itemBuilder: (ctx, index) {
+        return NewUserCard(users[index]);
+      },
+    );
   }
 }

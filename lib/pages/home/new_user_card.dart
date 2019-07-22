@@ -23,9 +23,7 @@ class NewUserCard extends StatelessWidget {
 
     final baseTextStyle = const TextStyle(fontFamily: 'Poppins');
     final regularTextStyle = baseTextStyle.copyWith(
-        color: const Color(0xffb6b2df),
-        fontSize: 9.0,
-        fontWeight: FontWeight.w400);
+        color: Colors.white, fontSize: 9.0, fontWeight: FontWeight.bold);
     final subHeaderTextStyle = regularTextStyle.copyWith(fontSize: 12.0);
     final headerTextStyle = baseTextStyle.copyWith(
         color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w600);
@@ -49,22 +47,15 @@ class NewUserCard extends StatelessWidget {
           Container(height: 10.0),
           Text(user.city, style: subHeaderTextStyle),
           Container(
-              margin: EdgeInsets.symmetric(vertical: 8.0),
-              height: 2.0,
-              width: 18.0,
-              color: Color(0xff00c6ff)),
-          Row(
-            children: <Widget>[
-              Expanded(
-                  child: _userValue(
-                      value: user.nationality,
-                      image: 'assets/images/ic_distance.png')),
-              Expanded(
-                  child: _userValue(
-                      value: user.occupation,
-                      image: 'assets/images/ic_gravity.png'))
-            ],
+            margin: EdgeInsets.symmetric(vertical: 8.0),
+            height: 2.0,
+            width: 25.0,
+            color: Colors.amber,
           ),
+          Expanded(
+              child: _userValue(
+                  value: user.nationality,
+                  image: 'assets/images/ic_distance.png')),
         ],
       ),
     );
@@ -74,7 +65,16 @@ class NewUserCard extends StatelessWidget {
       height: 150.0,
       margin: EdgeInsets.only(left: 46.0),
       decoration: BoxDecoration(
-        color: Color(0xFF333366),
+        gradient: LinearGradient(
+          colors: [
+            const Color(0xFF3366FF),
+            const Color(0xFF00CCFF),
+          ],
+          begin: const FractionalOffset(1.0, 0.0),
+          end: const FractionalOffset(0.0, 0.0),
+          stops: [0.0, 1.0],
+          tileMode: TileMode.clamp,
+        ),
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(8.0),
         boxShadow: <BoxShadow>[

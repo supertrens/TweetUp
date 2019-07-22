@@ -8,6 +8,11 @@ class HeroBanner extends StatelessWidget {
     "assets/images/taiwan3.jpg",
     "assets/images/taiwan4.jpg",
     "assets/images/taiwan5.jpg",
+    "assets/images/taiwan6.jpg",
+    "assets/images/taiwan7.jpg",
+    "assets/images/taiwan8.jpg",
+    "assets/images/taiwan9.jpg",
+    "assets/images/taiwan10.jpg",
   ];
 
   @override
@@ -26,7 +31,7 @@ class HeroBanner extends StatelessWidget {
                   child: Hero(
                     tag: "Taiwan",
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(20.0),
                       child: FadeInImage(
                         image: AssetImage(taiwanImages[index]),
                         fit: BoxFit.cover,
@@ -40,7 +45,8 @@ class HeroBanner extends StatelessWidget {
             itemCount: taiwanImages.length,
             viewportFraction: 0.7,
             scale: 0.9,
-            control: new SwiperControl(),
+            duration: 500,
+            control: new SwiperControl(size: 50),
           ),
         )
       ],
