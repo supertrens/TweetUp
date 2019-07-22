@@ -11,11 +11,11 @@ class SectionDivider extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Container(
-          padding: EdgeInsets.only(top: 16.0, left: 16),
+          padding: EdgeInsets.all(16),
           child: Text(sectionTitle, style: Theme.of(context).textTheme.title),
         ),
         Container(
-          padding: EdgeInsets.only(top: 16.0, right: 16),
+          padding: EdgeInsets.all(16),
           child: Text("see all", style: Theme.of(context).textTheme.subtitle),
         ),
       ],
