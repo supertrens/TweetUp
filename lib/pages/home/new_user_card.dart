@@ -61,32 +61,33 @@ class NewUserCard extends StatelessWidget {
                       image: 'assets/images/ic_distance.png')),
               Expanded(
                   child: _userValue(
-                      value: user.occupation, image: 'assets/images/ic_gravity.png'))
+                      value: user.occupation,
+                      image: 'assets/images/ic_gravity.png'))
             ],
           ),
         ],
       ),
     );
 
-    final userCard = new Container(
+    final userCard = Container(
       child: userCardContent,
       height: 150.0,
-      margin: new EdgeInsets.only(left: 46.0),
-      decoration: new BoxDecoration(
-        color: new Color(0xFF333366),
+      margin: EdgeInsets.only(left: 46.0),
+      decoration: BoxDecoration(
+        color: Color(0xFF333366),
         shape: BoxShape.rectangle,
-        borderRadius: new BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(8.0),
         boxShadow: <BoxShadow>[
-          new BoxShadow(
+          BoxShadow(
             color: Colors.black12,
             blurRadius: 10.0,
-            offset: new Offset(0.0, 10.0),
+            offset: Offset(0.0, 10.0),
           ),
         ],
       ),
     );
 
-    return new Container(
+    return Container(
         height: 140.0,
         margin: const EdgeInsets.symmetric(
           vertical: 16.0,

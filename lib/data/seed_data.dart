@@ -16,7 +16,7 @@ class DummyData {
         nationality: "Haiti",
         city: "Hsinchu",
         description: "I am one of the founder of this app",
-        occupation: "Quality Control engineer",
+        occupation: "QC engineer",
         image: "assets/images/francesca.jpeg"),
     const User(
         id: "1",

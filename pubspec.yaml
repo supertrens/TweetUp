@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.15.8
+  flutter_swiper:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,6 +50,13 @@ flutter:
    - assets/images/slot.jpeg
    - assets/images/ic_distance.png
    - assets/images/ic_gravity.png
+   - assets/images/taiwan.jpg
+   - assets/images/taiwan2.jpg
+   - assets/images/taiwan3.jpg
+   - assets/images/taiwan4.jpg
+   - assets/images/loading.gif
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

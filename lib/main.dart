@@ -45,8 +45,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // body: buildCard(currentDate, appSlogan, context),
-      body: new Column(
+      body: Column(
         children: <Widget>[
           CustomAppBar(),
           HomePageBody(),
