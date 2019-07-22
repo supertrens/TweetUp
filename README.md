@@ -1,10 +1,19 @@
-# taibe
+# TweetUp
 
-A new Flutter project.
+## This documentation is a work in progress (WIP)
+Feel free to update at anytime!!!
+
+This is the Mobile codebase for our "event" app.
+The main language is Dart/Flutter. However, we might add some native code ( Java/Kotlin or Swift),
+if we need to implement something that is not available yet in Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+We are trying to ffollow github flow [reference](https://guides.github.com/introduction/flow/).
+Please try to keep the master branch as clean as possible. 
+That's mean the master branch should always be compatible with production code.
+Prior to merge to master, please merge your different features branches to the "devlopment" branch.
+And also, after Merge please delete the branch that is merged.
 
 A few resources to get you started if this is your first Flutter project:
 
