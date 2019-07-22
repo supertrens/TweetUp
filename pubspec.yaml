@@ -45,6 +45,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/images/me.jpeg
+   - assets/images/francesca.jpeg
+   - assets/images/slot.jpeg
+   - assets/images/ic_distance.png
+   - assets/images/ic_gravity.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -63,11 +67,19 @@ flutter:
         - asset: assets/fonts/OpenSans-Regular.ttf
         - asset: assets/fonts/OpenSans-Bold.ttf
           weight: 700
+          
     - family: Quicksand
       fonts:
         - asset: assets/fonts/Quicksand-Regular.ttf
         - asset: assets/fonts/Quicksand-Bold.ttf
           weight: 700
+    
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
