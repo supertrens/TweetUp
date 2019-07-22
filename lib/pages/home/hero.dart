@@ -46,7 +46,7 @@ class HeroBanner extends StatelessWidget {
             viewportFraction: 0.7,
             scale: 0.9,
             duration: 500,
-            control: new SwiperControl(size: 50),
+            control: new SwiperControl(size: 50, color: Theme.of(context).accentColor),
           ),
         )
       ],

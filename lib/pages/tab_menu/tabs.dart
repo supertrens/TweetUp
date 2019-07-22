@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taibe/pages/home/body.dart';
 import 'package:taibe/pages/home/profile_card.dart';
 
+import '../../pages/settings.dart';
 import '../../utils/constant.dart';
 
 class TabsScreen extends StatefulWidget {
@@ -30,6 +31,7 @@ class _TabsScreenState extends State<TabsScreen> {
             ],
           ),
         ),
+        drawer: MainDrawer(),
         body: TabBarView(
           children: <Widget>[
             HomePageBody(),

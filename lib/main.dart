@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './pages/tabscreen/tabs.dart';
+import './pages/tab_menu/tabs.dart';
 
 
 import './utils/constant.dart';

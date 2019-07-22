@@ -14,21 +14,9 @@ class HomePageBody extends StatelessWidget {
           ProfileCard(),
           HeroBanner(),
           SectionDivider("New Users"),
-          // Expanded(child: buildListView()),
           NewUserCard(),
         ],
       ),
     );
   }
-
-  // ListView buildListView() {
-  //   return ListView.builder(
-  //     scrollDirection: Axis.vertical,
-  //     itemCount: users.length,
-  //     padding: const EdgeInsets.all(25),
-  //     itemBuilder: (ctx, index) {
-  //       return NewUserCard(users[index]);
-  //     },
-  //   );
-  // }
 }
