@@ -26,7 +26,7 @@ class MainDrawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: buildListTile(Icons.event_available, "Upcoming Events", () {
-              Navigator.of(context).pushReplacementNamed("/");
+              Navigator.of(context).pushReplacementNamed("/events");
             }),
           ),
           Padding(

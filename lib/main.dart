@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import './pages/tab_menu/tabs.dart';
 
-
 import './utils/constant.dart';
+import './pages/home/profile_card.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +14,13 @@ class MyApp extends StatelessWidget {
       title: Constant.APP_NAME,
       theme: buildThemeData(),
       home: Scaffold(body: TabsScreen()),
+      routes: {
+        "/events": (ctx) => ProfileCard(), // PLACEHOLDER: TO BE REMOVED
+      },
+      onUnknownRoute: (settings) {
+        //404 page
+        return MaterialPageRoute(builder: (ctx) => ProfileCard());
+      },
     );
   }
 
